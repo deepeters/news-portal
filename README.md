@@ -16,7 +16,7 @@ A REST API for querying and retrieving scoped news and information. There should
 
 * * Install PostgreSQL. for help installing ==> https://www.youtube.com/watch?v=-LwI4HMR_Eg
   * Open up your terminal and type the following commands(only works if postgreSQL is installed)
-  * 
+  
           psql
           
           CREATE DATABASE newsportal;
@@ -32,10 +32,6 @@ A REST API for querying and retrieving scoped news and information. There should
           CREATE TABLE users_departments ( id SERIAL PRIMARY KEY, user_id INT, department_id INT );
           
           CREATE DATABASE newsportal_test WITH TEMPLATE newsportal;
-
-
-### How to Use - Behaviour
-
 
 
 # Contact Information:
