@@ -62,7 +62,7 @@ public class sql2oDepartmentsTest {
         Departments department=setDepartment();
         sql2oDepartments.addDept(department);
         Users user=setUser();
-        Users otherUser= new Users("belyse","developer","Coding");
+        Users otherUser= new Users("dennis","developer","Coding");
         sql2oUsersDao.add(user);
         sql2oUsersDao.add(otherUser);
         sql2oDepartments.addUserIntoDept(user,department);
@@ -97,7 +97,7 @@ public class sql2oDepartmentsTest {
         Departments department=setDepartment();
         sql2oDepartments.addDept(department);
         Users user=setUser();
-        Users otherUser= new Users("belyse","developer","coding");
+        Users otherUser= new Users("dennis","developer","coding");
         sql2oUsersDao.add(user);
         sql2oUsersDao.add(otherUser);
         sql2oDepartments.addUserIntoDept(user,department);
@@ -125,7 +125,7 @@ public class sql2oDepartmentsTest {
         return new Departments("sale","marketing");
     }
     private Users setUser() {
-        return new Users("belyse","hr","recruiting");
+        return new Users("dennis","hr","recruiting");
     }
 
 }

@@ -105,7 +105,7 @@ public class sql2oNewsTest {
         return new Departments("sale","marketing");
     }
     private Users setUsers() {
-        return new Users("belyse","hr","recruiting");
+        return new Users("dennis","hr","recruiting");
     }
 
 }

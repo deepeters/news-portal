@@ -57,7 +57,7 @@ public class sql2oUsersTest {
     public void UserInstances() {
 
         Users users=setNewUser();
-        Users otherUser= new Users("belyse","hr","recruiting");
+        Users otherUser= new Users("dennis","hr","recruiting");
         sql2oUsers.add(users);
         sql2oUsers.add(otherUser);
         assertEquals(users.getName(),sql2oUsers.getAll().get(0).getName());
@@ -70,7 +70,7 @@ public class sql2oUsersTest {
         sql2oDepartments.addDept(department);
         sql2oDepartments.addDept(otherDepartment);
         Users user=setNewUser();
-        Users otherUser= new Users("belyse","hr","recruiting");
+        Users otherUser= new Users("dennis","hr","recruiting");
         sql2oUsers.add(user);
         sql2oUsers.add(otherUser);
         sql2oDepartments.addUserIntoDept(user,department);
@@ -82,7 +82,7 @@ public class sql2oUsersTest {
 
     //helper
     private Users setNewUser() {
-        return new Users("belyse","hr","recruiting");
+        return new Users("dennis","hr","recruiting");
     }
     private Departments setDepartment() {
         return new Departments("hr","marketing");
