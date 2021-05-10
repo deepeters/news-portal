@@ -2,7 +2,7 @@
 
 
 ### Project Description
-A REST API for querying and retrieving scoped news and information. There should be news/articles/posts that are available to all employees without navigating into any department, and others that are housed/classified within departments
+A Java/Spark application with a rest REST API for querying and retrieving scoped news and information. News, articles and posts are available to all users without navigating into any department, and others that are housed or classified within departments.
 
 <img src="/news_portal.png">
 
