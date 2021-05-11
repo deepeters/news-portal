@@ -50,6 +50,22 @@ public class App {
 
         staticFileLocation("/public");
 
+        ProcessBuilder process = new ProcessBuilder();
+        int port;
+        if (process.environment().get("PORT") != null) {
+            port = Integer.parseInt(process.environment().get("PORT"));
+        } else {
+            port = 4567;
+        }
+        port(port);
+        staticFileLocation("/public");
+
+        // creating the landing page
+        get("/",(request, response) ->{
+            Map<String,Object> model = new HashMap<>();
+            return new ModelAndView(model,"index.hbs");
+        },new HandlebarsTemplateEngine());
+
         get("/", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             List<Departments> allDepartments = sql2oDepartmentsDao.getAllDept();
