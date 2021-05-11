@@ -1,0 +1,17 @@
+#nav{
+    color:white;
+}
+#nav:hover{
+    background-color:white;
+    color:black;
+}
+#h1{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding:2%;
+    margin:3%;
+}
+
+ body{
+     background-color: grey;
+ }

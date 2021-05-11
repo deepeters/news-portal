@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{#block "title"}}News_portal{{/block}}</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Douglas Fir</title>
+    {{#block "styles"}}
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="../css/styles.css">
+    {{/block}}
 </head>
 <body>
 <ul style="background-color:black;" class="nav justify-content-center">
@@ -27,24 +30,11 @@
         {{/block}}
     </div>
 </div>
-<!--end main template-->
-
-{{#block "footer"}}
-    <style>
-        #nav{
-            color:white;
-        }
-        #nav:hover{
-            background-color:white;
-            color:black;
-        }
-        #h1{
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
-            padding:2%;
-            margin:3%;
-        }
-    </style>
-    </body>
-    </html>
-{{/block}}
+<footer class="footer">
+<div class="container">
+    <hr>
+    <article>Stay Informed!</article>
+</div>
+</footer>
+</body>
+</html>

@@ -1,3 +1,10 @@
+{{#partial "title"}}News Form{{/partial}}
+
+{{#block "styles"}}
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="../css/styles.css">
+{{/block}}
+
 {{#partial "content"}}
     <h3>Add Department!</h3>
     <form action="/dept/new" method="post">
@@ -18,11 +25,5 @@
         </div>
     </form>
 {{/partial}}
-<style>
-    body{
-        background-image: url("http://www.wns.com/Portals/0/Images/HeaderBanner/desktop/619/101/Insights-Tag-Search_HD.jpg");
-        background-repeat: no-repeat;
-        background-size:cover;
-    }
-</style>
+
 {{> layout.hbs}}
